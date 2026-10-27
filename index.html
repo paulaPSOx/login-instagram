@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Instagram</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/icone.png" type="image/png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Slideshow de imagens -->
+        <div class="login__images">
+            <img src="img/celular.png" class="login__phone" alt="Celular">
+            <img src="img/insta1.png" class="login__post login__post--active" alt="Post 1">
+            <img src="img/insta2.png" class="login__post" alt="Post 2">
+        </div>
+
+        <!-- Formulário -->
+        <div class="login__form-wrapper">
+            <form class="login__form" id="loginForm" novalidate>
+                <img src="img/insta-logo.png" class="login__logo" alt="Instagram Logo">
+                <div class="login__alert" id="loginAlert"></div>
+
+                <div class="login__input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Telefone, nome de usuário ou email" required>
+                </div>
+
+                <div class="login__input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Senha" required>
+                </div>
+
+                <button type="submit" class="login__btn" id="btnLogin">Entrar</button>
+                <div class="login__separator">OU</div>
+
+                <button type="button" class="login__facebook" id="loginFacebook">Entrar com Facebook</button>
+                <button type="button" class="login__forgot" id="forgotPassword">Esqueceu a senha?</button>
+            </form>
+
+            <div class="login__signup">
+                <p>Não tem uma conta?</p>
+                <a href="#" class="login__signup-link" id="signupLink">Cadastre-se</a>
+            </div>
+
+            <p class="login__app-text">Obtenha o aplicativo</p>
+            <div class="login__app-links">
+                <img src="img/ios.png" class="login__app-logo" alt="App Store">
+                <img src="img/google.png" class="login__app-logo" alt="Google Play">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Feito por Paula Oliveira</p>
+        <div class="footer__links">
+            <a href="https://github.com/paulaPSOx" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/oliveiraspaula" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
